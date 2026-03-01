@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aace.dev/schemas/decision-log.json",
+  "title": "AI Decision Log",
+  "description": "Schema for AI-augmented CI/CD decision logging (SOC 2/ISO 27001 compliant)",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "timestamp",
+    "decision_type",
+    "agent_id",
+    "agent_version",
+    "model",
+    "trust_tier",
+    "input",
+    "analysis",
+    "policy_evaluation",
+    "confidence_score",
+    "decision",
+    "action_taken",
+    "human_override"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for this decision"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the decision was made"
+    },
+    "decision_type": {
+      "type": "string",
+      "enum": ["PR_REVIEW", "SECURITY_GATE", "CANARY_PROMOTION", "ROLLBACK", "TEST_TRIAGE"],
+      "description": "Type of decision being made"
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Identifier of the AI agent making the decision"
+    },
+    "agent_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Version of the AI agent (semver)"
+    },
+    "model": {
+      "type": "string",
+      "description": "LLM model used for this decision"
+    },
+    "trust_tier": {
+      "type": "string",
+      "enum": ["T0", "T1", "T2", "T3"],
+      "description": "Trust tier of the agent at time of decision"
+    },
+    "input": {
+      "type": "object",
+      "description": "Input context for the decision",
+      "properties": {
+        "pr_number": { "type": "integer" },
+        "repository": { "type": "string" },
+        "files_changed": { "type": "integer" },
+        "lines_added": { "type": "integer" },
+        "lines_deleted": { "type": "integer" }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "description": "Analysis performed by the agent",
+      "properties": {
+        "issues_found": { "type": "integer" },
+        "severity_breakdown": {
+          "type": "object",
+          "properties": {
+            "critical": { "type": "integer" },
+            "high": { "type": "integer" },
+            "medium": { "type": "integer" },
+            "low": { "type": "integer" }
+          }
+        },
+        "security_scan_result": { "type": "string" },
+        "test_coverage_delta": { "type": "string" }
+      }
+    },
+    "policy_evaluation": {
+      "type": "object",
+      "description": "OPA policy evaluation results",
+      "required": ["allow", "deny"],
+      "properties": {
+        "policy_file": { "type": "string" },
+        "result": { "type": "string", "enum": ["allow", "deny"] },
+        "allow": { "type": "boolean" },
+        "deny": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "warning": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Agent confidence in the decision (0.0-1.0)"
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "APPROVE",
+        "APPROVE_WITH_SUGGESTIONS",
+        "REQUEST_CHANGES",
+        "BLOCK",
+        "PROMOTE",
+        "ROLLBACK",
+        "QUARANTINE",
+        "RETRY"
+      ],
+      "description": "Final decision made"
+    },
+    "action_taken": {
+      "type": "object",
+      "description": "Actions taken as a result of the decision",
+      "properties": {
+        "comments_posted": { "type": "integer" },
+        "labels_applied": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "auto_fixes_applied": { "type": "integer" },
+        "rollback_triggered": { "type": "boolean" },
+        "notification_sent": { "type": "boolean" }
+      }
+    },
+    "human_override": {
+      "type": "boolean",
+      "description": "Whether a human overrode the AI decision"
+    },
+    "override_reason": {
+      "type": ["string", "null"],
+      "description": "Reason for human override if applicable"
+    },
+    "audit": {
+      "type": "object",
+      "description": "Audit metadata",
+      "properties": {
+        "schema_version": { "type": "string" },
+        "compliance": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["SOC2", "ISO27001", "GDPR", "HIPAA"] }
+        },
+        "retention_years": { "type": "integer" }
+      }
+    }
+  }
+}

@@ -1,0 +1,7607 @@
+{
+  "registry_version": "2.0.0",
+  "last_updated": "2025-12-23T18:56:24.196Z",
+  "total_agents": 263,
+  "agents": {
+    "context-manager": {
+      "name": "context-manager",
+      "category": "orchestration",
+      "description": "Central coordination hub maintaining project state across multi-agent workflows",
+      "capabilities": [
+        "project_context_management",
+        "agent_coordination",
+        "workflow_orchestration",
+        "state_preservation",
+        "resource_allocation"
+      ],
+      "triggers": [
+        "multi-agent workflows",
+        "complex projects",
+        "cross-functional coordination",
+        "project management"
+      ],
+      "tools": [
+        "All MCP tools"
+      ],
+      "model": "opus",
+      "complexity_score": 9,
+      "success_rate": 0.95,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "hierarchical",
+        "sequential"
+      ],
+      "use_cases": [
+        "Coordinating complex multi-agent projects",
+        "Maintaining project state across sessions",
+        "Resource allocation and optimization"
+      ]
+    },
+    "task-orchestrator": {
+      "name": "task-orchestrator",
+      "category": "orchestration",
+      "description": "Task Master workflow coordination with parallel execution optimization",
+      "capabilities": [
+        "workflow_coordination",
+        "parallel_execution",
+        "task_decomposition",
+        "resource_allocation",
+        "progress_tracking"
+      ],
+      "triggers": [
+        "complex features",
+        "multi-agent coordination",
+        "cross-functional work",
+        "large-scale projects"
+      ],
+      "tools": [
+        "Task Master MCP",
+        "context management"
+      ],
+      "model": "opus",
+      "complexity_score": 8,
+      "success_rate": 0.92,
+      "avg_response_time": 25,
+      "dependencies": [
+        "task-executor",
+        "task-checker"
+      ],
+      "coordination_patterns": [
+        "sequential",
+        "parallel",
+        "hierarchical"
+      ],
+      "use_cases": [
+        "Coordinating complex feature development",
+        "Managing parallel task execution",
+        "Resource optimization across teams"
+      ]
+    },
+    "task-executor": {
+      "name": "task-executor",
+      "category": "orchestration",
+      "description": "Individual task execution with error handling and progress reporting",
+      "capabilities": [
+        "task_implementation",
+        "error_handling",
+        "progress_reporting",
+        "quality_assurance",
+        "documentation"
+      ],
+      "triggers": [
+        "specific task implementation",
+        "feature development",
+        "bug fixes",
+        "code implementation"
+      ],
+      "tools": [
+        "Development tools",
+        "testing frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.88,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "Implementing specific development tasks",
+        "Handling bug fixes and enhancements",
+        "Executing well-defined features"
+      ]
+    },
+    "task-checker": {
+      "name": "task-checker",
+      "category": "orchestration",
+      "description": "Quality validation and completion verification for implemented tasks",
+      "capabilities": [
+        "quality_validation",
+        "completion_verification",
+        "testing",
+        "code_review",
+        "requirement_checking"
+      ],
+      "triggers": [
+        "task completion",
+        "quality assurance",
+        "validation",
+        "testing"
+      ],
+      "tools": [
+        "Testing frameworks",
+        "code analysis tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.9,
+      "avg_response_time": 15,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "Validating task completion",
+        "Quality assurance",
+        "Requirement verification"
+      ]
+    },
+    "spec-kit-executor": {
+      "name": "spec-kit-executor",
+      "category": "orchestration",
+      "description": "Executes spec-kit tasks sequentially following the /implement command workflow",
+      "capabilities": [
+        "spec_kit_project_detection",
+        "task_dependency_analysis",
+        "sequential_execution",
+        "agent_coordination",
+        "progress_tracking",
+        "error_recovery"
+      ],
+      "triggers": [
+        "spec-kit implementation",
+        "/implement command",
+        "spec-driven development",
+        "sequential task execution"
+      ],
+      "tools": [
+        "File system",
+        "Task Master MCP",
+        "context management"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.92,
+      "avg_response_time": 35,
+      "dependencies": [
+        "task-executor"
+      ],
+      "coordination_patterns": [
+        "sequential",
+        "hierarchical"
+      ],
+      "use_cases": [
+        "Executing spec-kit /implement workflows",
+        "Sequential task execution with dependencies",
+        "Spec-driven development coordination"
+      ]
+    },
+    "nextjs-pro": {
+      "name": "nextjs-pro",
+      "category": "frontend",
+      "description": "Next.js expert specializing in SSR, SSG, API routes, and performance optimization",
+      "capabilities": [
+        "nextjs_development",
+        "ssr_optimization",
+        "performance_tuning",
+        "api_routes",
+        "typescript_integration"
+      ],
+      "triggers": [
+        "nextjs",
+        "react",
+        "frontend",
+        "ssr",
+        "ssg",
+        "performance"
+      ],
+      "tools": [
+        "Next.js",
+        "TypeScript",
+        "Vite",
+        "Testing frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.89,
+      "avg_response_time": 20,
+      "dependencies": [
+        "typescript-pro"
+      ],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "vue-expert": {
+      "name": "vue-expert",
+      "category": "frontend",
+      "description": "Vue.js specialist with expertise in Composition API, Vuex, and modern Vue patterns",
+      "capabilities": [
+        "vue_development",
+        "composition_api",
+        "vuex_state_management",
+        "vue3_migration",
+        "component_architecture"
+      ],
+      "triggers": [
+        "vue",
+        "vuejs",
+        "frontend",
+        "component_development",
+        "state_management"
+      ],
+      "tools": [
+        "Vue.js",
+        "Vuex",
+        "Vue Router",
+        "Composition API"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.87,
+      "avg_response_time": 18,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "react-pro": {
+      "name": "react-pro",
+      "category": "frontend",
+      "description": "React specialist with hooks, context, and modern React patterns expertise",
+      "capabilities": [
+        "react_development",
+        "hooks_patterns",
+        "context_api",
+        "component_architecture",
+        "state_management"
+      ],
+      "triggers": [
+        "react",
+        "frontend",
+        "components",
+        "hooks",
+        "state_management"
+      ],
+      "tools": [
+        "React",
+        "Redux",
+        "React Router",
+        "Testing Library"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.86,
+      "avg_response_time": 18,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "ui-designer": {
+      "name": "ui-designer",
+      "category": "frontend",
+      "description": "UI/UX design specialist creating user-centered interfaces with accessibility focus",
+      "capabilities": [
+        "ui_design",
+        "ux_principles",
+        "accessibility",
+        "design_systems",
+        "prototyping"
+      ],
+      "triggers": [
+        "ui",
+        "ux",
+        "design",
+        "accessibility",
+        "prototyping"
+      ],
+      "tools": [
+        "Figma",
+        "Adobe XD",
+        "Design systems",
+        "Accessibility tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.85,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "ux-design-expert": {
+      "name": "ux-design-expert",
+      "category": "frontend",
+      "description": "UX research and design specialist focusing on user experience optimization",
+      "capabilities": [
+        "ux_research",
+        "user_testing",
+        "interaction_design",
+        "information_architecture",
+        "usability"
+      ],
+      "triggers": [
+        "ux",
+        "user_research",
+        "usability",
+        "interaction_design",
+        "user_testing"
+      ],
+      "tools": [
+        "User research tools",
+        "Prototyping tools",
+        "Analytics platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.84,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "design-system-architect": {
+      "name": "design-system-architect",
+      "category": "frontend",
+      "description": "Design system specialist creating scalable component libraries and design tokens",
+      "capabilities": [
+        "design_systems",
+        "component_libraries",
+        "design_tokens",
+        "scalable_ui",
+        "design_documentation"
+      ],
+      "triggers": [
+        "design_system",
+        "component_library",
+        "design_tokens",
+        "scalable_ui"
+      ],
+      "tools": [
+        "Design tools",
+        "Component frameworks",
+        "Documentation tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.88,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "tailwind-css-expert": {
+      "name": "tailwind-css-expert",
+      "category": "frontend",
+      "description": "Tailwind CSS specialist for utility-first styling and design systems",
+      "capabilities": [
+        "tailwind_css",
+        "utility_first_styling",
+        "responsive_design",
+        "design_systems",
+        "css_optimization"
+      ],
+      "triggers": [
+        "tailwind",
+        "css",
+        "styling",
+        "responsive_design",
+        "design_systems"
+      ],
+      "tools": [
+        "Tailwind CSS",
+        "PostCSS",
+        "CSS frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.9,
+      "avg_response_time": 15,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "frontend-developer": {
+      "name": "frontend-developer",
+      "category": "frontend",
+      "description": "General frontend developer with HTML, CSS, JavaScript expertise",
+      "capabilities": [
+        "html_css_js",
+        "responsive_design",
+        "cross_browser_compatibility",
+        "accessibility",
+        "web_standards"
+      ],
+      "triggers": [
+        "frontend",
+        "html",
+        "css",
+        "javascript",
+        "web_development"
+      ],
+      "tools": [
+        "Web technologies",
+        "Browser dev tools",
+        "Testing frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 4,
+      "success_rate": 0.85,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "backend-architect": {
+      "name": "backend-architect",
+      "category": "backend",
+      "description": "Backend systems architect specializing in scalable API design and microservices",
+      "capabilities": [
+        "system_architecture",
+        "api_design",
+        "microservices",
+        "scalability",
+        "distributed_systems"
+      ],
+      "triggers": [
+        "backend",
+        "architecture",
+        "api_design",
+        "microservices",
+        "scalability"
+      ],
+      "tools": [
+        "Architecture tools",
+        "API design tools",
+        "Cloud platforms"
+      ],
+      "model": "opus",
+      "complexity_score": 9,
+      "success_rate": 0.91,
+      "avg_response_time": 35,
+      "dependencies": [],
+      "coordination_patterns": [
+        "hierarchical"
+      ]
+    },
+    "microservices-architect": {
+      "name": "microservices-architect",
+      "category": "backend",
+      "description": "Specialized microservices architect for designing scalable, resilient distributed systems with service mesh and cloud-native patterns",
+      "capabilities": [
+        "microservices_architecture",
+        "service_mesh",
+        "kubernetes_orchestration",
+        "distributed_systems",
+        "api_gateway_patterns",
+        "event_driven_architecture",
+        "observability_patterns"
+      ],
+      "triggers": [
+        "microservices",
+        "distributed_systems",
+        "kubernetes",
+        "service_mesh",
+        "api_gateway",
+        "event_sourcing",
+        "system_scaling"
+      ],
+      "tools": [
+        "Kubernetes",
+        "Istio",
+        "Docker",
+        "gRPC",
+        "Kafka",
+        "MCP servers"
+      ],
+      "model": "sonnet",
+      "complexity_score": 9,
+      "success_rate": 0.93,
+      "avg_response_time": 32,
+      "dependencies": [
+        "context-manager",
+        "devops-engineer"
+      ],
+      "coordination_patterns": [
+        "hierarchical",
+        "parallel"
+      ],
+      "use_cases": [
+        "Designing microservice decomposition strategies",
+        "Implementing service mesh with Istio",
+        "Creating Kubernetes deployment patterns",
+        "Establishing observability and monitoring",
+        "Designing event-driven communication patterns"
+      ]
+    },
+    "fastapi-expert": {
+      "name": "fastapi-expert",
+      "category": "backend",
+      "description": "FastAPI specialist for high-performance Python APIs with automatic documentation",
+      "capabilities": [
+        "fastapi_development",
+        "async_programming",
+        "api_documentation",
+        "dependency_injection",
+        "pydantic_models"
+      ],
+      "triggers": [
+        "fastapi",
+        "python",
+        "api",
+        "async",
+        "backend"
+      ],
+      "tools": [
+        "FastAPI",
+        "Pydantic",
+        "AsyncIO",
+        "Python testing"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.89,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "django-expert": {
+      "name": "django-expert",
+      "category": "backend",
+      "description": "Django framework specialist for full-stack web applications",
+      "capabilities": [
+        "django_development",
+        "orm",
+        "admin_interfaces",
+        "django_rest_framework",
+        "web_security"
+      ],
+      "triggers": [
+        "django",
+        "python",
+        "web_framework",
+        "full_stack",
+        "backend"
+      ],
+      "tools": [
+        "Django",
+        "DRF",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "api-documenter": {
+      "name": "api-documenter",
+      "category": "backend",
+      "description": "API documentation specialist creating comprehensive API references",
+      "capabilities": [
+        "api_documentation",
+        "openapi_specification",
+        "technical_writing",
+        "developer_experience",
+        "reference_guides"
+      ],
+      "triggers": [
+        "api_documentation",
+        "openapi",
+        "technical_docs",
+        "developer_experience"
+      ],
+      "tools": [
+        "OpenAPI tools",
+        "Documentation platforms",
+        "Testing tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.86,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "api-schema-auto-migrator": {
+      "name": "api-schema-auto-migrator",
+      "category": "backend",
+      "description": "Zero-downtime API evolution and backward compatibility management",
+      "capabilities": [
+        "api_evolution",
+        "schema_migration",
+        "backward_compatibility",
+        "versioning",
+        "contract_testing"
+      ],
+      "triggers": [
+        "api_evolution",
+        "schema_migration",
+        "backward_compatibility",
+        "versioning"
+      ],
+      "tools": [
+        "API management tools",
+        "Testing frameworks",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.88,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "jwt-expert": {
+      "name": "jwt-expert",
+      "category": "backend",
+      "description": "JWT authentication specialist with healthcare security expertise",
+      "capabilities": [
+        "jwt_implementation",
+        "authentication",
+        "healthcare_security",
+        "oauth2",
+        "token_management"
+      ],
+      "triggers": [
+        "jwt",
+        "authentication",
+        "security",
+        "healthcare_compliance",
+        "oauth2"
+      ],
+      "tools": [
+        "JWT libraries",
+        "Security testing tools",
+        "Compliance frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.92,
+      "avg_response_time": 25,
+      "dependencies": [
+        "security-auditor"
+      ],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "grpc-expert": {
+      "name": "grpc-expert",
+      "category": "backend",
+      "description": "gRPC specialist for high-performance microservice communication",
+      "capabilities": [
+        "grpc_implementation",
+        "protocol_buffers",
+        "microservices",
+        "interceptors",
+        "streaming"
+      ],
+      "triggers": [
+        "grpc",
+        "microservices",
+        "protocol_buffers",
+        "streaming",
+        "rpc"
+      ],
+      "tools": [
+        "gRPC",
+        "Protocol Buffers",
+        "Service mesh tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.85,
+      "avg_response_time": 28,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "openapi-expert": {
+      "name": "openapi-expert",
+      "category": "backend",
+      "description": "OpenAPI specification specialist for API design and documentation",
+      "capabilities": [
+        "openapi_design",
+        "api_specification",
+        "documentation",
+        "contract_testing",
+        "api_first"
+      ],
+      "triggers": [
+        "openapi",
+        "api_design",
+        "specification",
+        "documentation"
+      ],
+      "tools": [
+        "OpenAPI tools",
+        "API design platforms",
+        "Testing frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.87,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "kafka-expert": {
+      "name": "kafka-expert",
+      "category": "backend",
+      "description": "Apache Kafka specialist for event streaming and messaging systems",
+      "capabilities": [
+        "kafka_implementation",
+        "event_streaming",
+        "message_queuing",
+        "data_pipelines",
+        "real_time_processing"
+      ],
+      "triggers": [
+        "kafka",
+        "event_streaming",
+        "messaging",
+        "data_pipelines"
+      ],
+      "tools": [
+        "Apache Kafka",
+        "Streaming platforms",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.86,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "bullmq-expert": {
+      "name": "bullmq-expert",
+      "category": "backend",
+      "description": "BullMQ queue specialist for Redis-based job processing and task queues",
+      "capabilities": [
+        "bullmq_implementation",
+        "redis_queues",
+        "job_processing",
+        "task_scheduling",
+        "background_jobs"
+      ],
+      "triggers": [
+        "bullmq",
+        "redis",
+        "queues",
+        "job_processing",
+        "background_tasks"
+      ],
+      "tools": [
+        "BullMQ",
+        "Redis",
+        "Node.js",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.85,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "openai-api-expert": {
+      "name": "openai-api-expert",
+      "category": "backend",
+      "description": "OpenAI API specialist for LLM integration and AI applications",
+      "capabilities": [
+        "openai_integration",
+        "llm_applications",
+        "api_optimization",
+        "prompt_engineering",
+        "ai_features"
+      ],
+      "triggers": [
+        "openai",
+        "llm",
+        "ai_integration",
+        "api_optimization"
+      ],
+      "tools": [
+        "OpenAI API",
+        "LangChain",
+        "AI frameworks",
+        "Testing tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.88,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "serverless-architect": {
+      "name": "serverless-architect",
+      "category": "backend",
+      "description": "Serverless architecture specialist for cloud-native applications",
+      "capabilities": [
+        "serverless_design",
+        "lambda_functions",
+        "cloud_formation",
+        "event_driven_architecture",
+        "cost_optimization"
+      ],
+      "triggers": [
+        "serverless",
+        "aws_lambda",
+        "cloud_formation",
+        "event_driven"
+      ],
+      "tools": [
+        "AWS Lambda",
+        "CloudFormation",
+        "Serverless frameworks",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.87,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "database-admin": {
+      "name": "database-admin",
+      "category": "database",
+      "description": "Database administration specialist with performance tuning expertise",
+      "capabilities": [
+        "database_administration",
+        "performance_tuning",
+        "backup_recovery",
+        "security",
+        "monitoring"
+      ],
+      "triggers": [
+        "database",
+        "performance",
+        "administration",
+        "backup",
+        "monitoring"
+      ],
+      "tools": [
+        "Database tools",
+        "Monitoring platforms",
+        "Security tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.89,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "database-optimizer": {
+      "name": "database-optimizer",
+      "category": "database",
+      "description": "Database performance optimization specialist for query tuning and indexing",
+      "capabilities": [
+        "query_optimization",
+        "indexing",
+        "performance_tuning",
+        "database_monitoring",
+        "scalability"
+      ],
+      "triggers": [
+        "database_optimization",
+        "query_tuning",
+        "performance",
+        "indexing"
+      ],
+      "tools": [
+        "Database tools",
+        "Query analyzers",
+        "Monitoring platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.88,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "postgres-pro": {
+      "name": "postgres-pro",
+      "category": "database",
+      "description": "PostgreSQL specialist with advanced features and performance expertise",
+      "capabilities": [
+        "postgresql_development",
+        "query_optimization",
+        "indexing",
+        "extensions",
+        "replication"
+      ],
+      "triggers": [
+        "postgresql",
+        "database",
+        "sql",
+        "performance",
+        "optimization"
+      ],
+      "tools": [
+        "PostgreSQL",
+        "pgAdmin",
+        "Query tools",
+        "Monitoring"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "mysql-expert": {
+      "name": "mysql-expert",
+      "category": "database",
+      "description": "MySQL database specialist with performance and scaling expertise",
+      "capabilities": [
+        "mysql_development",
+        "query_optimization",
+        "replication",
+        "scaling",
+        "monitoring"
+      ],
+      "triggers": [
+        "mysql",
+        "database",
+        "sql",
+        "performance",
+        "scaling"
+      ],
+      "tools": [
+        "MySQL",
+        "Performance tools",
+        "Monitoring platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.86,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "mongodb-expert": {
+      "name": "mongodb-expert",
+      "category": "database",
+      "description": "MongoDB specialist for NoSQL document databases",
+      "capabilities": [
+        "mongodb_development",
+        "document_modeling",
+        "aggregation",
+        "scaling",
+        "performance"
+      ],
+      "triggers": [
+        "mongodb",
+        "nosql",
+        "document_database",
+        "aggregation"
+      ],
+      "tools": [
+        "MongoDB",
+        "Compass",
+        "Atlas",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.85,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "redis-expert": {
+      "name": "redis-expert",
+      "category": "database",
+      "description": "Redis caching and in-memory data structure specialist",
+      "capabilities": [
+        "redis_implementation",
+        "caching_strategies",
+        "pubsub",
+        "data_structures",
+        "performance"
+      ],
+      "triggers": [
+        "redis",
+        "caching",
+        "in_memory",
+        "pubsub",
+        "performance"
+      ],
+      "tools": [
+        "Redis",
+        "Caching frameworks",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.88,
+      "avg_response_time": 18,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "elasticsearch-expert": {
+      "name": "elasticsearch-expert",
+      "category": "database",
+      "description": "Elasticsearch specialist for search and analytics engines",
+      "capabilities": [
+        "elasticsearch_implementation",
+        "search_optimization",
+        "indexing",
+        "querying",
+        "analytics"
+      ],
+      "triggers": [
+        "elasticsearch",
+        "search",
+        "analytics",
+        "indexing",
+        "querying"
+      ],
+      "tools": [
+        "Elasticsearch",
+        "Kibana",
+        "Logstash",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "vector-db-expert": {
+      "name": "vector-db-expert",
+      "category": "database",
+      "description": "Vector database specialist for AI and similarity search applications",
+      "capabilities": [
+        "vector_databases",
+        "similarity_search",
+        "embeddings",
+        "ai_applications",
+        "performance"
+      ],
+      "triggers": [
+        "vector_database",
+        "similarity_search",
+        "embeddings",
+        "ai_applications"
+      ],
+      "tools": [
+        "Vector DBs",
+        "Embedding frameworks",
+        "AI platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.86,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "prisma-expert": {
+      "name": "prisma-expert",
+      "category": "database",
+      "description": "Prisma ORM specialist for type-safe database access",
+      "capabilities": [
+        "prisma_implementation",
+        "orm_design",
+        "type_safety",
+        "database_migrations",
+        "schema_management"
+      ],
+      "triggers": [
+        "prisma",
+        "orm",
+        "type_safety",
+        "database_migrations"
+      ],
+      "tools": [
+        "Prisma",
+        "TypeScript",
+        "Database tools",
+        "Testing frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.88,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "sql-pro": {
+      "name": "sql-pro",
+      "category": "database",
+      "description": "SQL specialist with advanced query optimization and database design",
+      "capabilities": [
+        "sql_optimization",
+        "query_design",
+        "database_modeling",
+        "performance_tuning",
+        "stored_procedures"
+      ],
+      "triggers": [
+        "sql",
+        "database",
+        "query_optimization",
+        "database_design"
+      ],
+      "tools": [
+        "SQL tools",
+        "Query analyzers",
+        "Database platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "security-auditor": {
+      "name": "security-auditor",
+      "category": "security",
+      "description": "Security assessment specialist for vulnerability detection and compliance",
+      "capabilities": [
+        "security_audit",
+        "vulnerability_assessment",
+        "compliance",
+        "penetration_testing",
+        "risk_analysis"
+      ],
+      "triggers": [
+        "security",
+        "audit",
+        "vulnerability",
+        "compliance",
+        "penetration_testing"
+      ],
+      "tools": [
+        "Security tools",
+        "Vulnerability scanners",
+        "Compliance frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 9,
+      "success_rate": 0.91,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "jwt_security_agent": {
+      "name": "jwt_security_agent",
+      "category": "security",
+      "description": "JWT security specialist for healthcare platforms with HIPAA compliance",
+      "capabilities": [
+        "jwt_security",
+        "healthcare_compliance",
+        "hipaa_requirements",
+        "token_management",
+        "authentication"
+      ],
+      "triggers": [
+        "jwt_security",
+        "healthcare_compliance",
+        "hipaa",
+        "authentication"
+      ],
+      "tools": [
+        "JWT libraries",
+        "Security testing",
+        "Compliance frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 9,
+      "success_rate": 0.93,
+      "avg_response_time": 25,
+      "dependencies": [
+        "security-auditor"
+      ],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "provenance-auditor": {
+      "name": "provenance-auditor",
+      "category": "security",
+      "description": "Content provenance and source verification specialist",
+      "capabilities": [
+        "provenance_tracking",
+        "source_verification",
+        "content_authenticity",
+        "audit_trails",
+        "compliance"
+      ],
+      "triggers": [
+        "provenance",
+        "source_verification",
+        "content_authenticity",
+        "audit_trails"
+      ],
+      "tools": [
+        "Verification tools",
+        "Audit platforms",
+        "Compliance frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "ai-engineer": {
+      "name": "ai-engineer",
+      "category": "ai_ml",
+      "description": "AI systems engineer specializing in LLM integration and AI applications",
+      "capabilities": [
+        "ai_systems",
+        "llm_integration",
+        "ai_applications",
+        "machine_learning",
+        "prompt_engineering"
+      ],
+      "triggers": [
+        "ai",
+        "llm",
+        "machine_learning",
+        "ai_applications"
+      ],
+      "tools": [
+        "AI frameworks",
+        "LLM platforms",
+        "Machine learning tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.88,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "ml-engineer": {
+      "name": "ml-engineer",
+      "category": "ai_ml",
+      "description": "Machine learning engineer specializing in model development and deployment",
+      "capabilities": [
+        "machine_learning",
+        "model_development",
+        "ml_ops",
+        "data_science",
+        "model_deployment"
+      ],
+      "triggers": [
+        "machine_learning",
+        "ml_ops",
+        "data_science",
+        "model_deployment"
+      ],
+      "tools": [
+        "ML frameworks",
+        "Data science tools",
+        "Deployment platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.87,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "training-data-steward": {
+      "name": "training-data-steward",
+      "category": "ai_ml",
+      "description": "Training data management and quality specialist for AI systems",
+      "capabilities": [
+        "data_management",
+        "data_quality",
+        "training_data",
+        "data_governance",
+        "ai_compliance"
+      ],
+      "triggers": [
+        "training_data",
+        "data_quality",
+        "data_governance",
+        "ai_compliance"
+      ],
+      "tools": [
+        "Data management tools",
+        "Quality assurance platforms",
+        "Compliance frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.86,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "langchain-expert": {
+      "name": "langchain-expert",
+      "category": "ai_ml",
+      "description": "LangChain framework specialist for LLM application development",
+      "capabilities": [
+        "langchain_development",
+        "llm_applications",
+        "chain_building",
+        "agent_frameworks",
+        "prompt_templates"
+      ],
+      "triggers": [
+        "langchain",
+        "llm_applications",
+        "agent_frameworks",
+        "prompt_engineering"
+      ],
+      "tools": [
+        "LangChain",
+        "LLM platforms",
+        "Python frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "langgraph-agent": {
+      "name": "langgraph-agent",
+      "category": "ai_ml",
+      "description": "LangGraph development specialist for building production-ready multi-agent workflows with state management and orchestration",
+      "capabilities": [
+        "langgraph_development",
+        "state_management",
+        "workflow_orchestration",
+        "checkpointing",
+        "multi_agent_coordination",
+        "persistence_patterns",
+        "streaming_optimization"
+      ],
+      "triggers": [
+        "langgraph",
+        "workflow_automation",
+        "state_management",
+        "multi_agent_systems",
+        "checkpointing",
+        "agent_orchestration"
+      ],
+      "tools": [
+        "LangGraph",
+        "PostgreSQL",
+        "Python",
+        "FastAPI",
+        "MCP servers"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.92,
+      "avg_response_time": 28,
+      "dependencies": [
+        "context-manager",
+        "database-admin"
+      ],
+      "coordination_patterns": [
+        "hierarchical",
+        "parallel"
+      ],
+      "use_cases": [
+        "Building LangGraph workflows for article creation pipeline",
+        "Implementing state management for multi-agent systems",
+        "Creating checkpointed workflows with pause/resume",
+        "Optimizing parallel execution and streaming"
+      ]
+    },
+    "nlp-engineer": {
+      "name": "nlp-engineer",
+      "category": "ai_ml",
+      "description": "Expert NLP engineer for natural language processing, text analysis, and language model integration with focus on healthcare content and article processing pipelines",
+      "capabilities": [
+        "natural_language_processing",
+        "text_analysis",
+        "entity_recognition",
+        "sentiment_analysis",
+        "language_models",
+        "healthcare_nlp",
+        "text_classification",
+        "question_answering"
+      ],
+      "triggers": [
+        "nlp",
+        "text_processing",
+        "language_models",
+        "entity_extraction",
+        "sentiment_analysis",
+        "healthcare_text",
+        "article_analysis",
+        "transformers"
+      ],
+      "tools": [
+        "Hugging Face",
+        "spaCy",
+        "NLTK",
+        "transformers",
+        "BERT",
+        "GPT",
+        "MCP servers"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.9,
+      "avg_response_time": 25,
+      "dependencies": [
+        "context-manager",
+        "ai-engineer"
+      ],
+      "coordination_patterns": [
+        "sequential",
+        "parallel"
+      ],
+      "use_cases": [
+        "Processing healthcare content with medical terminology",
+        "Extracting entities from research papers and articles",
+        "Building multilingual text analysis pipelines",
+        "Implementing real-time text classification systems",
+        "Optimizing language models for production deployment"
+      ]
+    },
+    "llm-architect": {
+      "name": "llm-architect",
+      "category": "architecture",
+      "description": "LLM application architect for scalable AI systems",
+      "capabilities": [
+        "llm_architecture",
+        "scalable_ai_systems",
+        "agent_design",
+        "prompt_engineering",
+        "ai_optimization"
+      ],
+      "triggers": [
+        "llm_architecture",
+        "scalable_ai",
+        "agent_design",
+        "ai_systems"
+      ],
+      "tools": [
+        "LLM platforms",
+        "Architecture tools",
+        "Monitoring frameworks"
+      ],
+      "model": "opus",
+      "complexity_score": 9,
+      "success_rate": 0.89,
+      "avg_response_time": 35,
+      "dependencies": [],
+      "coordination_patterns": [
+        "hierarchical"
+      ]
+    },
+    "devops-incident-responder": {
+      "name": "devops-incident-responder",
+      "category": "devops",
+      "description": "Incident response specialist for production system outages and emergencies",
+      "capabilities": [
+        "incident_response",
+        "troubleshooting",
+        "system_recovery",
+        "root_cause_analysis",
+        "monitoring"
+      ],
+      "triggers": [
+        "incident",
+        "outage",
+        "emergency",
+        "troubleshooting",
+        "production_issues"
+      ],
+      "tools": [
+        "Monitoring tools",
+        "Incident management platforms",
+        "Debugging tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.9,
+      "avg_response_time": 15,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "cicd-pipeline-engineer": {
+      "name": "cicd-pipeline-engineer",
+      "category": "devops",
+      "description": "CI/CD pipeline specialist for automated testing and deployment",
+      "capabilities": [
+        "cicd_pipelines",
+        "automation",
+        "testing",
+        "deployment",
+        "continuous_integration"
+      ],
+      "triggers": [
+        "cicd",
+        "automation",
+        "testing",
+        "deployment",
+        "continuous_integration"
+      ],
+      "tools": [
+        "CI/CD tools",
+        "Automation frameworks",
+        "Testing platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.88,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "docker-expert": {
+      "name": "docker-expert",
+      "category": "devops",
+      "description": "Docker containerization specialist for application deployment",
+      "capabilities": [
+        "docker_containers",
+        "containerization",
+        "orchestration",
+        "microservices",
+        "deployment"
+      ],
+      "triggers": [
+        "docker",
+        "containers",
+        "containerization",
+        "orchestration"
+      ],
+      "tools": [
+        "Docker",
+        "Kubernetes",
+        "Container orchestration",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.87,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "kubernetes-architect": {
+      "name": "kubernetes-architect",
+      "category": "devops",
+      "description": "Kubernetes orchestration specialist for container management at scale",
+      "capabilities": [
+        "kubernetes_orchestration",
+        "container_management",
+        "scalability",
+        "deployment",
+        "monitoring"
+      ],
+      "triggers": [
+        "kubernetes",
+        "orchestration",
+        "containers",
+        "scalability"
+      ],
+      "tools": [
+        "Kubernetes",
+        "Helm",
+        "Monitoring platforms",
+        "Container tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.86,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "terraform-specialist": {
+      "name": "terraform-specialist",
+      "category": "devops",
+      "description": "Terraform infrastructure as code specialist for cloud resource management",
+      "capabilities": [
+        "terraform_implementation",
+        "infrastructure_as_code",
+        "cloud_management",
+        "automation",
+        "scalability"
+      ],
+      "triggers": [
+        "terraform",
+        "infrastructure_as_code",
+        "cloud_management",
+        "automation"
+      ],
+      "tools": [
+        "Terraform",
+        "Cloud platforms",
+        "Infrastructure tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "prometheus-expert": {
+      "name": "prometheus-expert",
+      "category": "devops",
+      "description": "Prometheus monitoring and alerting specialist for observability",
+      "capabilities": [
+        "prometheus_monitoring",
+        "alerting",
+        "observability",
+        "metrics",
+        "system_monitoring"
+      ],
+      "triggers": [
+        "prometheus",
+        "monitoring",
+        "alerting",
+        "observability",
+        "metrics"
+      ],
+      "tools": [
+        "Prometheus",
+        "Grafana",
+        "AlertManager",
+        "Monitoring stacks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.86,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "elk-expert": {
+      "name": "elk-expert",
+      "category": "devops",
+      "description": "ELK stack specialist for log management and analytics",
+      "capabilities": [
+        "elk_stack",
+        "log_management",
+        "analytics",
+        "monitoring",
+        "troubleshooting"
+      ],
+      "triggers": [
+        "elk_stack",
+        "log_management",
+        "analytics",
+        "monitoring"
+      ],
+      "tools": [
+        "Elasticsearch",
+        "Logstash",
+        "Kibana",
+        "Filebeat"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.85,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "loki-expert": {
+      "name": "loki-expert",
+      "category": "devops",
+      "description": "Grafana Loki specialist for log aggregation and monitoring",
+      "capabilities": [
+        "loki_logs",
+        "log_aggregation",
+        "monitoring",
+        "troubleshooting",
+        "observability"
+      ],
+      "triggers": [
+        "loki",
+        "log_aggregation",
+        "monitoring",
+        "grafana"
+      ],
+      "tools": [
+        "Grafana Loki",
+        "Prometheus",
+        "Grafana",
+        "Monitoring tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.85,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "test-automation-specialist": {
+      "name": "test-automation-specialist",
+      "category": "testing",
+      "description": "Test automation specialist for comprehensive testing strategies",
+      "capabilities": [
+        "test_automation",
+        "testing_strategy",
+        "quality_assurance",
+        "test_frameworks",
+        "ci_cd_integration"
+      ],
+      "triggers": [
+        "test_automation",
+        "testing",
+        "quality_assurance",
+        "test_frameworks"
+      ],
+      "tools": [
+        "Testing frameworks",
+        "Automation tools",
+        "CI/CD platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.88,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "qa-expert": {
+      "name": "qa-expert",
+      "category": "testing",
+      "description": "Quality assurance specialist for comprehensive testing strategies",
+      "capabilities": [
+        "quality_assurance",
+        "testing_strategy",
+        "test_planning",
+        "quality_metrics",
+        "compliance"
+      ],
+      "triggers": [
+        "quality_assurance",
+        "testing",
+        "qa",
+        "quality_metrics"
+      ],
+      "tools": [
+        "Testing tools",
+        "Quality frameworks",
+        "Compliance platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "playwright-expert": {
+      "name": "playwright-expert",
+      "category": "testing",
+      "description": "Playwright testing specialist for end-to-end web application testing",
+      "capabilities": [
+        "playwright_testing",
+        "e2e_testing",
+        "browser_automation",
+        "web_testing",
+        "cross_browser"
+      ],
+      "triggers": [
+        "playwright",
+        "e2e_testing",
+        "browser_automation",
+        "web_testing"
+      ],
+      "tools": [
+        "Playwright",
+        "Testing frameworks",
+        "Browser automation"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.88,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "jest-expert": {
+      "name": "jest-expert",
+      "category": "testing",
+      "description": "Jest testing framework specialist for JavaScript and TypeScript applications",
+      "capabilities": [
+        "jest_testing",
+        "javascript_testing",
+        "typescript_testing",
+        "unit_testing",
+        "integration_testing"
+      ],
+      "triggers": [
+        "jest",
+        "javascript_testing",
+        "typescript_testing",
+        "unit_testing"
+      ],
+      "tools": [
+        "Jest",
+        "JavaScript",
+        "TypeScript",
+        "Testing frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.87,
+      "avg_response_time": 18,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "qa-automation-engineer": {
+      "name": "qa-automation-engineer",
+      "category": "testing",
+      "description": "QA automation engineer for comprehensive test automation strategies",
+      "capabilities": [
+        "qa_automation",
+        "test_automation",
+        "quality_assurance",
+        "testing_frameworks",
+        "ci_cd_integration"
+      ],
+      "triggers": [
+        "qa_automation",
+        "test_automation",
+        "quality_assurance",
+        "testing"
+      ],
+      "tools": [
+        "Testing frameworks",
+        "Automation tools",
+        "QA platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.86,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "business-analyst": {
+      "name": "business-analyst",
+      "category": "business",
+      "description": "Business analysis specialist for requirements and process optimization",
+      "capabilities": [
+        "business_analysis",
+        "requirements_gathering",
+        "process_optimization",
+        "stakeholder_management",
+        "business_intelligence"
+      ],
+      "triggers": [
+        "business_analysis",
+        "requirements",
+        "process_optimization",
+        "stakeholders"
+      ],
+      "tools": [
+        "Analysis tools",
+        "Documentation platforms",
+        "Business intelligence"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "healthcare-compliance-agent": {
+      "name": "healthcare-compliance-agent",
+      "category": "business",
+      "description": "Healthcare regulatory compliance specialist for HIPAA and medical standards",
+      "capabilities": [
+        "healthcare_compliance",
+        "hipaa_regulations",
+        "medical_standards",
+        "regulatory_requirements",
+        "compliance_auditing"
+      ],
+      "triggers": [
+        "healthcare_compliance",
+        "hipaa",
+        "regulatory",
+        "medical_standards"
+      ],
+      "tools": [
+        "Compliance frameworks",
+        "Regulatory platforms",
+        "Audit tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 9,
+      "success_rate": 0.92,
+      "avg_response_time": 30,
+      "dependencies": [
+        "security-auditor"
+      ],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "heaig-medical-terminology-agent": {
+      "name": "heaig-medical-terminology-agent",
+      "category": "healthcare",
+      "description": "Medical terminology validation and E-A-T compliance specialist for healthcare platforms",
+      "capabilities": [
+        "medical_terminology_validation",
+        "mesh_snomed_ct_integration",
+        "evidence_level_classification",
+        "eat_compliance",
+        "citation_validation",
+        "medical_license_verification"
+      ],
+      "triggers": [
+        "medical terminology validation",
+        "E-A-T compliance",
+        "medical content review",
+        "evidence classification",
+        "healthcare content creation"
+      ],
+      "tools": [
+        "MeSH API",
+        "SNOMED CT",
+        "UMLS API",
+        "PubMed API",
+        "WordPress integration",
+        "validation frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.91,
+      "avg_response_time": 28,
+      "dependencies": [
+        "healthcare-compliance-agent"
+      ],
+      "coordination_patterns": [
+        "sequential",
+        "parallel"
+      ],
+      "use_cases": [
+        "Validating medical terminology compliance",
+        "Implementing E-A-T validation systems",
+        "Medical content review and certification",
+        "Healthcare platform compliance"
+      ]
+    },
+    "payment-integration-agent": {
+      "name": "payment-integration-agent",
+      "category": "business",
+      "description": "Payment systems integration specialist for e-commerce and transactions",
+      "capabilities": [
+        "payment_integration",
+        "e-commerce",
+        "transaction_processing",
+        "payment_gateways",
+        "financial_systems"
+      ],
+      "triggers": [
+        "payment_integration",
+        "e-commerce",
+        "transactions",
+        "payment_gateways"
+      ],
+      "tools": [
+        "Payment APIs",
+        "E-commerce platforms",
+        "Financial systems"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [
+        "security-auditor"
+      ],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "compliance-officer-agent": {
+      "name": "compliance-officer-agent",
+      "category": "business",
+      "description": "Enterprise compliance validation and regulatory enforcement agent",
+      "capabilities": [
+        "compliance_validation",
+        "regulatory_enforcement",
+        "audit_management",
+        "risk_assessment",
+        "compliance_reporting"
+      ],
+      "triggers": [
+        "compliance",
+        "regulatory",
+        "audit",
+        "risk_assessment"
+      ],
+      "tools": [
+        "Compliance frameworks",
+        "Audit platforms",
+        "Risk management tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.88,
+      "avg_response_time": 28,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "docs-architect": {
+      "name": "docs-architect",
+      "category": "documentation",
+      "description": "Technical documentation architect for comprehensive API and system documentation",
+      "capabilities": [
+        "technical_documentation",
+        "api_documentation",
+        "system_architecture",
+        "user_guides",
+        "documentation_strategy"
+      ],
+      "triggers": [
+        "documentation",
+        "technical_writing",
+        "api_docs",
+        "user_guides"
+      ],
+      "tools": [
+        "Documentation tools",
+        "Markdown processors",
+        "API documentation platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.89,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "documentation-librarian": {
+      "name": "documentation-librarian",
+      "category": "documentation",
+      "description": "Documentation organization and knowledge management specialist",
+      "capabilities": [
+        "documentation_organization",
+        "knowledge_management",
+        "content_curation",
+        "documentation_maintenance",
+        "information_architecture"
+      ],
+      "triggers": [
+        "documentation_organization",
+        "knowledge_management",
+        "content_curation"
+      ],
+      "tools": [
+        "Documentation platforms",
+        "Knowledge management tools",
+        "Content management systems"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.86,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "tutorial-engineer": {
+      "name": "tutorial-engineer",
+      "category": "documentation",
+      "description": "Tutorial and educational content specialist for learning materials",
+      "capabilities": [
+        "tutorial_creation",
+        "educational_content",
+        "learning_materials",
+        "user_education",
+        "documentation"
+      ],
+      "triggers": [
+        "tutorials",
+        "educational_content",
+        "learning_materials",
+        "user_education"
+      ],
+      "tools": [
+        "Content creation tools",
+        "Educational platforms",
+        "Documentation frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "create-readme-section": {
+      "name": "create-readme-section",
+      "category": "documentation",
+      "description": "README section generator following best practices and project context",
+      "capabilities": [
+        "readme_generation",
+        "documentation_best_practices",
+        "project_context",
+        "technical_writing",
+        "content_organization"
+      ],
+      "triggers": [
+        "readme",
+        "documentation",
+        "technical_writing",
+        "project_context"
+      ],
+      "tools": [
+        "Documentation tools",
+        "Content management",
+        "Project analysis"
+      ],
+      "model": "sonnet",
+      "complexity_score": 4,
+      "success_rate": 0.88,
+      "avg_response_time": 15,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "code-searcher": {
+      "name": "code-searcher",
+      "category": "system_utilities",
+      "description": "Codebase search and analysis specialist for understanding complex systems",
+      "capabilities": [
+        "code_search",
+        "code_analysis",
+        "system_understanding",
+        "pattern_recognition",
+        "debugging"
+      ],
+      "triggers": [
+        "code_search",
+        "code_analysis",
+        "system_understanding",
+        "debugging"
+      ],
+      "tools": [
+        "Search tools",
+        "Code analysis platforms",
+        "Debugging tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.89,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "code-reviewer": {
+      "name": "code-reviewer",
+      "category": "system_utilities",
+      "description": "Expert code review specialist for quality, security, and maintainability",
+      "capabilities": [
+        "code_review",
+        "quality_assurance",
+        "security_analysis",
+        "maintainability",
+        "best_practices"
+      ],
+      "triggers": [
+        "code_review",
+        "quality_assurance",
+        "security",
+        "maintainability"
+      ],
+      "tools": [
+        "Code analysis tools",
+        "Security scanners",
+        "Quality frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.88,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "pr-reviewer-specialist": {
+      "name": "pr-reviewer-specialist",
+      "category": "utility",
+      "description": "Pull request review specialist with interactive approval workflow",
+      "capabilities": [
+        "pr_review",
+        "code_analysis",
+        "quality_assurance",
+        "interactive_workflow",
+        "github_integration"
+      ],
+      "triggers": [
+        "pr_review",
+        "pull_request",
+        "code_review",
+        "github"
+      ],
+      "tools": [
+        "GitHub tools",
+        "Code analysis",
+        "Review platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.9,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "refactor-code": {
+      "name": "refactor-code",
+      "category": "utility",
+      "description": "Code refactoring specialist for improving code quality and maintainability",
+      "capabilities": [
+        "code_refactoring",
+        "quality_improvement",
+        "maintainability",
+        "design_patterns",
+        "code_optimization"
+      ],
+      "triggers": [
+        "refactoring",
+        "code_quality",
+        "maintainability",
+        "design_patterns"
+      ],
+      "tools": [
+        "Refactoring tools",
+        "Code analysis",
+        "Quality frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "software-engineering-expert": {
+      "name": "software-engineering-expert",
+      "category": "utility",
+      "description": "Software engineering specialist for system design and best practices",
+      "capabilities": [
+        "software_engineering",
+        "system_design",
+        "best_practices",
+        "architecture",
+        "development_methodologies"
+      ],
+      "triggers": [
+        "software_engineering",
+        "system_design",
+        "architecture",
+        "best_practices"
+      ],
+      "tools": [
+        "Engineering tools",
+        "Design frameworks",
+        "Development platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.88,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "performance-engineer": {
+      "name": "performance-engineer",
+      "category": "cloud",
+      "description": "Performance optimization specialist for application and system tuning",
+      "capabilities": [
+        "performance_optimization",
+        "system_tuning",
+        "bottleneck_analysis",
+        "monitoring",
+        "scalability"
+      ],
+      "triggers": [
+        "performance",
+        "optimization",
+        "system_tuning",
+        "bottlenecks"
+      ],
+      "tools": [
+        "Performance tools",
+        "Monitoring platforms",
+        "Analysis frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.87,
+      "avg_response_time": 28,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "resilience-engineer": {
+      "name": "resilience-engineer",
+      "category": "utility",
+      "description": "System resilience specialist for fault tolerance and error handling",
+      "capabilities": [
+        "resilience_engineering",
+        "fault_tolerance",
+        "error_handling",
+        "reliability",
+        "system_robustness"
+      ],
+      "triggers": [
+        "resilience",
+        "fault_tolerance",
+        "error_handling",
+        "reliability"
+      ],
+      "tools": [
+        "Resilience frameworks",
+        "Testing tools",
+        "Monitoring platforms"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.86,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "check-best-practices": {
+      "name": "check-best-practices",
+      "category": "utility",
+      "description": "Best practices validation specialist for code and architecture standards",
+      "capabilities": [
+        "best_practices",
+        "code_validation",
+        "standards_compliance",
+        "quality_assurance",
+        "architecture_review"
+      ],
+      "triggers": [
+        "best_practices",
+        "code_validation",
+        "standards",
+        "quality_assurance"
+      ],
+      "tools": [
+        "Validation tools",
+        "Quality frameworks",
+        "Standards databases"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.88,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "user-behavior-analyst": {
+      "name": "user-behavior-analyst",
+      "category": "analysis",
+      "description": "User behavior analysis specialist for UX optimization and personalization",
+      "capabilities": [
+        "user_behavior_analysis",
+        "ux_optimization",
+        "personalization",
+        "analytics",
+        "user_research"
+      ],
+      "triggers": [
+        "user_behavior",
+        "ux_optimization",
+        "personalization",
+        "analytics"
+      ],
+      "tools": [
+        "Analytics platforms",
+        "User research tools",
+        "Behavior analysis frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.85,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "memory-bank-synchronizer": {
+      "name": "memory-bank-synchronizer",
+      "category": "utility",
+      "description": "Memory bank synchronization specialist for maintaining architectural consistency",
+      "capabilities": [
+        "memory_bank_sync",
+        "architectural_consistency",
+        "documentation_sync",
+        "knowledge_management",
+        "state_preservation"
+      ],
+      "triggers": [
+        "memory_bank",
+        "architectural_consistency",
+        "documentation_sync",
+        "knowledge_management"
+      ],
+      "tools": [
+        "Memory management tools",
+        "Documentation platforms",
+        "Knowledge frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.87,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ]
+    },
+    "AGENT_ORCHESTRATOR": {
+      "name": "AGENT_ORCHESTRATOR",
+      "category": "system_utilities",
+      "description": "name: agent-orchestrator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "AI_AGENT_REGISTRY": {
+      "name": "AI_AGENT_REGISTRY",
+      "category": "system_utilities",
+      "description": "name: ai-agent-registry",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "agent-communication-protocol": {
+      "name": "agent-communication-protocol",
+      "category": "system_utilities",
+      "description": "name: agent-communication-protocol",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "agent-organizer": {
+      "name": "agent-organizer",
+      "category": "system_utilities",
+      "description": "name: agent-organizer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "agent-template": {
+      "name": "agent-template",
+      "category": "system_utilities",
+      "description": "name: template-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "ai-agent-performance-profiler": {
+      "name": "ai-agent-performance-profiler",
+      "category": "system_utilities",
+      "description": "name: ai-agent-performance-profiler",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "ai-workflow-designer": {
+      "name": "ai-workflow-designer",
+      "category": "system_utilities",
+      "description": "name: ai-workflow-designer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "anti-duplication-protocol": {
+      "name": "anti-duplication-protocol",
+      "category": "system_utilities",
+      "description": "name: anti-duplication-protocol",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "apply-thinking-to": {
+      "name": "apply-thinking-to",
+      "category": "system_utilities",
+      "description": "name: apply-thinking-to",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "architect-review": {
+      "name": "architect-review",
+      "category": "system_utilities",
+      "description": "name: architect-reviewer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "auto-detection-engine": {
+      "name": "auto-detection-engine",
+      "category": "system_utilities",
+      "description": "name: auto-detection-engine",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "auto-detection-engine_1": {
+      "name": "auto-detection-engine_1",
+      "category": "system_utilities",
+      "description": "name: auto-detection-engine",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "backend-developer": {
+      "name": "backend-developer",
+      "category": "system_utilities",
+      "description": "name: backend-developer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "batch-operations-prompt": {
+      "name": "batch-operations-prompt",
+      "category": "system_utilities",
+      "description": "name: batch-operations-prompt",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "brand-guardian": {
+      "name": "brand-guardian",
+      "category": "system_utilities",
+      "description": "name: constance-brand",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "bullmq-expert_1": {
+      "name": "bullmq-expert_1",
+      "category": "system_utilities",
+      "description": "name: bullmq-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "c-pro": {
+      "name": "c-pro",
+      "category": "system_utilities",
+      "description": "name: c-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "ccusage-daily": {
+      "name": "ccusage-daily",
+      "category": "system_utilities",
+      "description": "name: ccusage-daily",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "change-management-agent": {
+      "name": "change-management-agent",
+      "category": "system_utilities",
+      "description": "name: change-management-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "choreography-engine": {
+      "name": "choreography-engine",
+      "category": "system_utilities",
+      "description": "name: choreography-engine",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "cleanup-context": {
+      "name": "cleanup-context",
+      "category": "system_utilities",
+      "description": "name: cleanup-context",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "cloud-architect": {
+      "name": "cloud-architect",
+      "category": "system_utilities",
+      "description": "name: cloud-architect",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "computer-vision-specialist": {
+      "name": "computer-vision-specialist",
+      "category": "system_utilities",
+      "description": "name: computer-vision-specialist",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "content-marketer": {
+      "name": "content-marketer",
+      "category": "system_utilities",
+      "description": "name: content-marketer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "context-aware-activator": {
+      "name": "context-aware-activator",
+      "category": "system_utilities",
+      "description": "name: context-aware-activator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "convert-to-test-driven-prompt": {
+      "name": "convert-to-test-driven-prompt",
+      "category": "system_utilities",
+      "description": "name: convert-to-test-driven-prompt",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "convert-to-todowrite-tasklist-prompt": {
+      "name": "convert-to-todowrite-tasklist-prompt",
+      "category": "system_utilities",
+      "description": "name: convert-to-todowrite-tasklist-prompt",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "cost-optimization-agent": {
+      "name": "cost-optimization-agent",
+      "category": "system_utilities",
+      "description": "name: cost-optimization-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "cpp-pro": {
+      "name": "cpp-pro",
+      "category": "system_utilities",
+      "description": "name: cpp-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "create_agent": {
+      "name": "create_agent",
+      "category": "system_utilities",
+      "description": "name: create-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "csharp-pro": {
+      "name": "csharp-pro",
+      "category": "system_utilities",
+      "description": "name: csharp-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "customer-support": {
+      "name": "customer-support",
+      "category": "system_utilities",
+      "description": "name: customer-support",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "data-engineer": {
+      "name": "data-engineer",
+      "category": "system_utilities",
+      "description": "name: data-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "data-scientist": {
+      "name": "data-scientist",
+      "category": "system_utilities",
+      "description": "name: data-scientist",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "debugger": {
+      "name": "debugger",
+      "category": "system_utilities",
+      "description": "name: debugger",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "deployment-engineer": {
+      "name": "deployment-engineer",
+      "category": "system_utilities",
+      "description": "name: deployment-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "design-review-agent": {
+      "name": "design-review-agent",
+      "category": "system_utilities",
+      "description": "name: design-review",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "design-review-slash-command": {
+      "name": "design-review-slash-command",
+      "category": "system_utilities",
+      "description": "allowed-tools: Grep, LS, Read, Edit, MultiEdit, Write, NotebookEdit, WebFetch, TodoWrite, WebSearch, BashOutput, KillBash, ListMcpResourcesTool, ReadMcpResourceTool, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__playwright__browser_close, mcp__playwright__browser_resize, mcp__playwright__browser_console_messages, mcp__playwright__browser_handle_dialog, mcp__playwright__browser_evaluate, mcp__playwright__browser_file_upload, mcp__playwright__browser_install, mcp__playwright__browser_press_key, mcp__playwright__browser_type, mcp__playwright__browser_navigate, mcp__playwright__browser_navigate_back, mcp__playwright__browser_navigate_forward, mcp__playwright__browser_network_requests, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_snapshot, mcp__playwright__browser_click, mcp__playwright__browser_drag, mcp__playwright__browser_hover, mcp__playwright__browser_select_option, mcp__playwright__browser_tab_list, mcp__playwright__browser_tab_new, mcp__playwright__browser_tab_select, mcp__playwright__browser_tab_close, mcp__playwright__browser_wait_for, Bash, Glob",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "devops-pipeline-automation": {
+      "name": "devops-pipeline-automation",
+      "category": "system_utilities",
+      "description": "name: devops-pipeline-automation",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "devops-troubleshooter": {
+      "name": "devops-troubleshooter",
+      "category": "system_utilities",
+      "description": "name: devops-troubleshooter",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "draft-agent": {
+      "name": "draft-agent",
+      "category": "system_utilities",
+      "description": "name: draft-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "dx-optimizer": {
+      "name": "dx-optimizer",
+      "category": "system_utilities",
+      "description": "name: dx-optimizer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "elasticsearch-expert_1": {
+      "name": "elasticsearch-expert_1",
+      "category": "system_utilities",
+      "description": "name: elasticsearch-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "elixir-pro": {
+      "name": "elixir-pro",
+      "category": "system_utilities",
+      "description": "name: elixir-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "elk-expert_1": {
+      "name": "elk-expert_1",
+      "category": "system_utilities",
+      "description": "name: elk-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "enhanced-agent-template": {
+      "name": "enhanced-agent-template",
+      "category": "system_utilities",
+      "description": "name: enhanced-agent-template",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "error-detective": {
+      "name": "error-detective",
+      "category": "system_utilities",
+      "description": "name: error-detective",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "explain-architecture-pattern": {
+      "name": "explain-architecture-pattern",
+      "category": "system_utilities",
+      "description": "name: explain-architecture-pattern",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "fastapi-expert_1": {
+      "name": "fastapi-expert_1",
+      "category": "system_utilities",
+      "description": "name: fastapi-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "fastify-expert": {
+      "name": "fastify-expert",
+      "category": "system_utilities",
+      "description": "name: fastify-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "feedback-loop-tracker": {
+      "name": "feedback-loop-tracker",
+      "category": "system_utilities",
+      "description": "name: feedback-loop-tracker",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "fiber-expert": {
+      "name": "fiber-expert",
+      "category": "system_utilities",
+      "description": "name: fiber-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "financial-modeling-agent": {
+      "name": "financial-modeling-agent",
+      "category": "system_utilities",
+      "description": "name: financial-modeling-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "flutter-expert": {
+      "name": "flutter-expert",
+      "category": "system_utilities",
+      "description": "name: flutter-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "fullstack-developer": {
+      "name": "fullstack-developer",
+      "category": "system_utilities",
+      "description": "name: fullstack-developer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "get-current-datetime": {
+      "name": "get-current-datetime",
+      "category": "system_utilities",
+      "description": "name: get-current-datetime",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "gin-expert": {
+      "name": "gin-expert",
+      "category": "system_utilities",
+      "description": "name: gin-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "go-resilience-engineer": {
+      "name": "go-resilience-engineer",
+      "category": "system_utilities",
+      "description": "name: go-resilience-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "go-zap-logging": {
+      "name": "go-zap-logging",
+      "category": "system_utilities",
+      "description": "name: go-zap-logging",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "golang-pro": {
+      "name": "golang-pro",
+      "category": "system_utilities",
+      "description": "name: golang-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "graphql-architect": {
+      "name": "graphql-architect",
+      "category": "system_utilities",
+      "description": "name: graphql-architect",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "grpc-expert_1": {
+      "name": "grpc-expert_1",
+      "category": "system_utilities",
+      "description": "name: grpc-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "haig_wordpress_headless_agent": {
+      "name": "haig_wordpress_headless_agent",
+      "category": "system_utilities",
+      "description": "You are an expert in WordPress headless CMS architecture with specialized knowledge in healthcare content management, medical compliance requirements, and high-performance API development. You implement WordPress as a pure backend API following HIPAA-ready security practices and medical content validation standards.",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "hallucination-trace-agent": {
+      "name": "hallucination-trace-agent",
+      "category": "system_utilities",
+      "description": "name: hallucination-trace-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "heaig_medical_terminology_agent": {
+      "name": "heaig_medical_terminology_agent",
+      "category": "system_utilities",
+      "description": "You are a Medical Compliance Framework specialist for healthcare platforms, with deep expertise in medical terminology standards (MeSH/SNOMED CT), E-A-T compliance, evidence-based medicine classification, and healthcare content validation. You implement TDD-first approaches with comprehensive test coverage for WordPress-based medical platforms.",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "hr-pro": {
+      "name": "hr-pro",
+      "category": "system_utilities",
+      "description": "name: hr-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "human-in-the-loop-handler": {
+      "name": "human-in-the-loop-handler",
+      "category": "system_utilities",
+      "description": "name: human-in-the-loop-handler",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "hybrid-cloud-architect": {
+      "name": "hybrid-cloud-architect",
+      "category": "system_utilities",
+      "description": "name: hybrid-cloud-architect",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "incident-responder": {
+      "name": "incident-responder",
+      "category": "system_utilities",
+      "description": "name: incident-responder",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "intelligent-agent-selector": {
+      "name": "intelligent-agent-selector",
+      "category": "system_utilities",
+      "description": "name: intelligent-agent-selector",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "ios-developer": {
+      "name": "ios-developer",
+      "category": "system_utilities",
+      "description": "name: ios-developer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "java-pro": {
+      "name": "java-pro",
+      "category": "system_utilities",
+      "description": "name: java-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "javascript-pro": {
+      "name": "javascript-pro",
+      "category": "system_utilities",
+      "description": "name: javascript-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "jest-expert_1": {
+      "name": "jest-expert_1",
+      "category": "system_utilities",
+      "description": "name: jest-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "judge-agent": {
+      "name": "judge-agent",
+      "category": "system_utilities",
+      "description": "name: judge-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "jwt-expert_1": {
+      "name": "jwt-expert_1",
+      "category": "system_utilities",
+      "description": "name: jwt-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "kafka-expert_1": {
+      "name": "kafka-expert_1",
+      "category": "system_utilities",
+      "description": "name: kafka-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "knowledge-graph-manager": {
+      "name": "knowledge-graph-manager",
+      "category": "system_utilities",
+      "description": "name: knowledge-graph-manager",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "laravel-expert": {
+      "name": "laravel-expert",
+      "category": "system_utilities",
+      "description": "name: laravel-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "learning-system": {
+      "name": "learning-system",
+      "category": "system_utilities",
+      "description": "name: learning-system",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "legacy-modernizer": {
+      "name": "legacy-modernizer",
+      "category": "system_utilities",
+      "description": "name: legacy-modernizer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "legal-advisor": {
+      "name": "legal-advisor",
+      "category": "system_utilities",
+      "description": "name: legal-advisor",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "loki-expert_1": {
+      "name": "loki-expert_1",
+      "category": "system_utilities",
+      "description": "name: loki-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "machine-learning-engineer": {
+      "name": "machine-learning-engineer",
+      "category": "system_utilities",
+      "description": "name: machine-learning-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "mermaid-expert": {
+      "name": "mermaid-expert",
+      "category": "system_utilities",
+      "description": "name: mermaid-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "minecraft-bukkit-pro": {
+      "name": "minecraft-bukkit-pro",
+      "category": "system_utilities",
+      "description": "name: minecraft-bukkit-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "mlops-engineer": {
+      "name": "mlops-engineer",
+      "category": "system_utilities",
+      "description": "name: mlops-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "mobile-developer": {
+      "name": "mobile-developer",
+      "category": "system_utilities",
+      "description": "name: mobile-developer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "mongodb-expert_1": {
+      "name": "mongodb-expert_1",
+      "category": "system_utilities",
+      "description": "name: mongodb-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "mysql-expert_1": {
+      "name": "mysql-expert_1",
+      "category": "system_utilities",
+      "description": "name: mysql-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "neo4j-pro": {
+      "name": "neo4j-pro",
+      "category": "system_utilities",
+      "description": "name: neo4j-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "network-engineer": {
+      "name": "network-engineer",
+      "category": "system_utilities",
+      "description": "name: network-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "nlp-llm-integration-expert": {
+      "name": "nlp-llm-integration-expert",
+      "category": "system_utilities",
+      "description": "name: nlp-llm-integration-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "nodejs-expert": {
+      "name": "nodejs-expert",
+      "category": "system_utilities",
+      "description": "name: nodejs-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "numpy-expert": {
+      "name": "numpy-expert",
+      "category": "system_utilities",
+      "description": "name: numpy-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "numpy-expert_1": {
+      "name": "numpy-expert_1",
+      "category": "system_utilities",
+      "description": "name: numpy-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "openai-api-expert_1": {
+      "name": "openai-api-expert_1",
+      "category": "system_utilities",
+      "description": "name: openai-api-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "openapi-expert_1": {
+      "name": "openapi-expert_1",
+      "category": "system_utilities",
+      "description": "name: openapi-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "pandas-expert": {
+      "name": "pandas-expert",
+      "category": "system_utilities",
+      "description": "name: pandas-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "pandas-expert_1": {
+      "name": "pandas-expert_1",
+      "category": "system_utilities",
+      "description": "name: pandas-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "payment-integration": {
+      "name": "payment-integration",
+      "category": "system_utilities",
+      "description": "name: payment-integration",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "personality-engine": {
+      "name": "personality-engine",
+      "category": "system_utilities",
+      "description": "name: personality-engine",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "php-pro": {
+      "name": "php-pro",
+      "category": "system_utilities",
+      "description": "name: php-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "category": "system_utilities",
+      "description": "name: plan",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "plan-mode-runner": {
+      "name": "plan-mode-runner",
+      "category": "system_utilities",
+      "description": "name: plan-mode-runner",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "pr-description-composer": {
+      "name": "pr-description-composer",
+      "category": "system_utilities",
+      "description": "name: pr-description-composer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "predictive-orchestrator": {
+      "name": "predictive-orchestrator",
+      "category": "system_utilities",
+      "description": "name: predictive-orchestrator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "prisma-expert_1": {
+      "name": "prisma-expert_1",
+      "category": "system_utilities",
+      "description": "name: prisma-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "product-manager": {
+      "name": "product-manager",
+      "category": "system_utilities",
+      "description": "name: product-manager",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "product-manager_1": {
+      "name": "product-manager_1",
+      "category": "system_utilities",
+      "description": "name: product-manager",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "project-analyst": {
+      "name": "project-analyst",
+      "category": "system_utilities",
+      "description": "name: project-analyst",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "prometheus-expert_1": {
+      "name": "prometheus-expert_1",
+      "category": "system_utilities",
+      "description": "name: prometheus-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "prompt-engineer": {
+      "name": "prompt-engineer",
+      "category": "system_utilities",
+      "description": "name: prompt-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "python-hyx-resilience": {
+      "name": "python-hyx-resilience",
+      "category": "system_utilities",
+      "description": "name: python-hyx-resilience",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "python-pro": {
+      "name": "python-pro",
+      "category": "system_utilities",
+      "description": "name: python-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "quant-analyst": {
+      "name": "quant-analyst",
+      "category": "system_utilities",
+      "description": "name: quant-analyst",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "rails-expert": {
+      "name": "rails-expert",
+      "category": "system_utilities",
+      "description": "name: rails-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "rd-knowledge-engineer": {
+      "name": "rd-knowledge-engineer",
+      "category": "system_utilities",
+      "description": "name: rd-knowledge-engineer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "redis-expert_1": {
+      "name": "redis-expert_1",
+      "category": "system_utilities",
+      "description": "name: redis-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "refactoring-specialist": {
+      "name": "refactoring-specialist",
+      "category": "system_utilities",
+      "description": "name: refactoring-specialist",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "reference-builder": {
+      "name": "reference-builder",
+      "category": "system_utilities",
+      "description": "name: reference-builder",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "risk-manager": {
+      "name": "risk-manager",
+      "category": "system_utilities",
+      "description": "name: risk-manager",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "ruby-pro": {
+      "name": "ruby-pro",
+      "category": "system_utilities",
+      "description": "name: ruby-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "rust-pro": {
+      "name": "rust-pro",
+      "category": "system_utilities",
+      "description": "name: rust-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "sales-automator": {
+      "name": "sales-automator",
+      "category": "system_utilities",
+      "description": "name: sales-automator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "scala-pro": {
+      "name": "scala-pro",
+      "category": "system_utilities",
+      "description": "name: scala-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "search-specialist": {
+      "name": "search-specialist",
+      "category": "system_utilities",
+      "description": "name: search-specialist",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "secure-prompts": {
+      "name": "secure-prompts",
+      "category": "system_utilities",
+      "description": "name: secure-prompts",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "security-audit": {
+      "name": "security-audit",
+      "category": "system_utilities",
+      "description": "name: security-audit",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-authority-builder": {
+      "name": "seo-authority-builder",
+      "category": "system_utilities",
+      "description": "name: seo-authority-builder",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-cannibalization-detector": {
+      "name": "seo-cannibalization-detector",
+      "category": "system_utilities",
+      "description": "name: seo-cannibalization-detector",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-content-auditor": {
+      "name": "seo-content-auditor",
+      "category": "system_utilities",
+      "description": "name: seo-content-auditor",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-content-planner": {
+      "name": "seo-content-planner",
+      "category": "system_utilities",
+      "description": "name: seo-content-planner",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-content-refresher": {
+      "name": "seo-content-refresher",
+      "category": "system_utilities",
+      "description": "name: seo-content-refresher",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-content-writer": {
+      "name": "seo-content-writer",
+      "category": "system_utilities",
+      "description": "name: seo-content-writer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-keyword-strategist": {
+      "name": "seo-keyword-strategist",
+      "category": "system_utilities",
+      "description": "name: seo-keyword-strategist",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-meta-optimizer": {
+      "name": "seo-meta-optimizer",
+      "category": "system_utilities",
+      "description": "name: seo-meta-optimizer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-snippet-hunter": {
+      "name": "seo-snippet-hunter",
+      "category": "system_utilities",
+      "description": "name: seo-snippet-hunter",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "seo-structure-architect": {
+      "name": "seo-structure-architect",
+      "category": "system_utilities",
+      "description": "name: seo-structure-architect",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "smart-agent-router": {
+      "name": "smart-agent-router",
+      "category": "system_utilities",
+      "description": "name: smart-agent-router",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "smart-agent-router_1": {
+      "name": "smart-agent-router_1",
+      "category": "system_utilities",
+      "description": "name: smart-agent-router",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "success-pattern-learner": {
+      "name": "success-pattern-learner",
+      "category": "system_utilities",
+      "description": "name: success-pattern-learner",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "supabase-pro": {
+      "name": "supabase-pro",
+      "category": "system_utilities",
+      "description": "name: supabase-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "task-checker_1": {
+      "name": "task-checker_1",
+      "category": "system_utilities",
+      "description": "name: task-checker",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "task-executor_1": {
+      "name": "task-executor_1",
+      "category": "system_utilities",
+      "description": "name: task-executor",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "task-master-initialization-specialist": {
+      "name": "task-master-initialization-specialist",
+      "category": "system_utilities",
+      "description": "name: task-master-initialization-specialist",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "task-master-template-manager": {
+      "name": "task-master-template-manager",
+      "category": "system_utilities",
+      "description": "name: task-master-template-manager",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "task-orchestrator_1": {
+      "name": "task-orchestrator_1",
+      "category": "system_utilities",
+      "description": "name: task-orchestrator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "team-configurator": {
+      "name": "team-configurator",
+      "category": "system_utilities",
+      "description": "name: team-configurator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "tech-lead-orchestrator": {
+      "name": "tech-lead-orchestrator",
+      "category": "system_utilities",
+      "description": "name: tech-lead-orchestrator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "tensorflow-expert": {
+      "name": "tensorflow-expert",
+      "category": "system_utilities",
+      "description": "name: tensorflow-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "tensorflow-expert_1": {
+      "name": "tensorflow-expert_1",
+      "category": "system_utilities",
+      "description": "name: tensorflow-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-advanced-injection": {
+      "name": "test-advanced-injection",
+      "category": "system_utilities",
+      "description": "name: test-advanced-injection",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-authority-claims": {
+      "name": "test-authority-claims",
+      "category": "system_utilities",
+      "description": "name: test-authority-claims",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-automator": {
+      "name": "test-automator",
+      "category": "system_utilities",
+      "description": "name: test-automator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-basic-role-override": {
+      "name": "test-basic-role-override",
+      "category": "system_utilities",
+      "description": "name: test-basic-role-override",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-css-hiding": {
+      "name": "test-css-hiding",
+      "category": "system_utilities",
+      "description": "name: test-css-hiding",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-encoding-attacks": {
+      "name": "test-encoding-attacks",
+      "category": "system_utilities",
+      "description": "name: test-encoding-attacks",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-framework": {
+      "name": "test-framework",
+      "category": "system_utilities",
+      "description": "name: test-framework",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "test-invisible-chars": {
+      "name": "test-invisible-chars",
+      "category": "system_utilities",
+      "description": "name: test-invisible-chars",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "typescript-cockatiel-resilience": {
+      "name": "typescript-cockatiel-resilience",
+      "category": "system_utilities",
+      "description": "name: typescript-cockatiel-resilience",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "typescript-pino-logging": {
+      "name": "typescript-pino-logging",
+      "category": "system_utilities",
+      "description": "name: typescript-pino-logging",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "typescript-pro": {
+      "name": "typescript-pro",
+      "category": "system_utilities",
+      "description": "name: typescript-pro",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "ui-ux-designer": {
+      "name": "ui-ux-designer",
+      "category": "system_utilities",
+      "description": "name: ui-ux-designer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "unity-developer": {
+      "name": "unity-developer",
+      "category": "system_utilities",
+      "description": "name: unity-developer",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "update-memory-bank": {
+      "name": "update-memory-bank",
+      "category": "system_utilities",
+      "description": "name: update-memory-bank",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "ux-researcher": {
+      "name": "ux-researcher",
+      "category": "system_utilities",
+      "description": "name: ezekiel-experience",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "vector-db-expert_1": {
+      "name": "vector-db-expert_1",
+      "category": "system_utilities",
+      "description": "name: vector-db-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "vibe-coding-coordinator": {
+      "name": "vibe-coding-coordinator",
+      "category": "system_utilities",
+      "description": "name: vibe-coding-coordinator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "visual-storyteller": {
+      "name": "visual-storyteller",
+      "category": "system_utilities",
+      "description": "name: amara-visual",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "wbs-structuring-agent": {
+      "name": "wbs-structuring-agent",
+      "category": "system_utilities",
+      "description": "name: wbs-structuring-agent",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "webassembly-specialist": {
+      "name": "webassembly-specialist",
+      "category": "system_utilities",
+      "description": "name: webassembly-specialist",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "websocket-expert": {
+      "name": "websocket-expert",
+      "category": "system_utilities",
+      "description": "name: websocket-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "websocket-expert_1": {
+      "name": "websocket-expert_1",
+      "category": "system_utilities",
+      "description": "name: websocket-expert",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "wordpress-master": {
+      "name": "wordpress-master",
+      "category": "system_utilities",
+      "description": "name: wordpress-master",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "workflow-coordinator": {
+      "name": "workflow-coordinator",
+      "category": "system_utilities",
+      "description": "name: workflow-coordinator",
+      "capabilities": [
+        "general_purpose"
+      ],
+      "triggers": [
+        "general_tasks"
+      ],
+      "tools": [
+        "basic_tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 5,
+      "success_rate": 0.8,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "General purpose tasks"
+      ]
+    },
+    "healthcare-medical-terminology-agent": {
+      "name": "healthcare-medical-terminology-agent",
+      "category": "healthcare",
+      "description": "Medical terminology validation and E-A-T compliance for healthcare platforms",
+      "capabilities": [
+        "medical_terminology_validation",
+        "eat_compliance",
+        "medical_standards_enforcement",
+        "content_accuracy_verification",
+        "healthcare_quality_assurance"
+      ],
+      "triggers": [
+        "medical content",
+        "healthcare compliance",
+        "E-A-T standards",
+        "medical terminology",
+        "healthcare platforms"
+      ],
+      "tools": [
+        "MeSH API",
+        "SNOMED CT",
+        "UMLS API",
+        "WordPress integration"
+      ],
+      "model": "sonnet",
+      "complexity_score": 7,
+      "success_rate": 0.88,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "Medical terminology validation in healthcare content",
+        "E-A-T compliance verification",
+        "Medical standards enforcement",
+        "Healthcare content quality assurance"
+      ]
+    },
+    "htmx-specialist": {
+      "name": "htmx-specialist",
+      "category": "frontend",
+      "description": "HTMX specialist for dynamic web applications with minimal JavaScript",
+      "capabilities": [
+        "htmx_development",
+        "dynamic_ui_updates",
+        "progressive_enhancement",
+        "server_side_rendering",
+        "minimal_javascript_patterns"
+      ],
+      "triggers": [
+        "htmx",
+        "dynamic html",
+        "progressive enhancement",
+        "server-side rendering",
+        "minimal javascript"
+      ],
+      "tools": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Backend frameworks"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.85,
+      "avg_response_time": 20,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "HTMX-based web application development",
+        "Progressive enhancement implementations",
+        "Dynamic UI with minimal JavaScript",
+        "Server-side rendering patterns"
+      ]
+    },
+    "plan-implementer": {
+      "name": "plan-implementer",
+      "category": "orchestration",
+      "description": "Implement code based on specific plans or task descriptions with focused execution",
+      "capabilities": [
+        "plan_execution",
+        "implementation_automation",
+        "task_decomposition",
+        "code_generation",
+        "quality_assurance"
+      ],
+      "triggers": [
+        "implementation tasks",
+        "code execution from plans",
+        "task automation",
+        "code generation",
+        "plan-based development"
+      ],
+      "tools": [
+        "All development tools",
+        "Code generation",
+        "Quality assurance"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.9,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "Focused implementation from well-defined plans",
+        "Task automation and execution",
+        "Code generation from specifications",
+        "Quality assurance for implementation tasks"
+      ]
+    },
+    "seo-specialist": {
+      "name": "seo-specialist",
+      "category": "seo",
+      "description": "Search engine optimization specialist for web content and technical SEO",
+      "capabilities": [
+        "seo_optimization",
+        "content_strategy",
+        "technical_seo",
+        "keyword_research",
+        "performance_optimization"
+      ],
+      "triggers": [
+        "SEO optimization",
+        "content marketing",
+        "keyword research",
+        "technical SEO",
+        "search ranking"
+      ],
+      "tools": [
+        "SEO tools",
+        "Analytics platforms",
+        "Content optimization"
+      ],
+      "model": "sonnet",
+      "complexity_score": 6,
+      "success_rate": 0.86,
+      "avg_response_time": 22,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "SEO strategy development",
+        "Technical SEO optimization",
+        "Content optimization for search",
+        "Keyword research and analysis"
+      ]
+    },
+    "thinkeven-architect": {
+      "name": "thinkeven-architect",
+      "category": "architecture",
+      "description": "System architecture specialist for ThinkEven platform integration",
+      "capabilities": [
+        "system_architecture",
+        "platform_integration",
+        "scalability_planning",
+        "technical_design",
+        "architecture_patterns"
+      ],
+      "triggers": [
+        "system architecture",
+        "ThinkEven integration",
+        "scalability planning",
+        "technical design",
+        "platform architecture"
+      ],
+      "tools": [
+        "Architecture tools",
+        "Design patterns",
+        "Integration tools"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.89,
+      "avg_response_time": 28,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "System architecture design",
+        "ThinkEven platform integration",
+        "Scalability planning",
+        "Technical design patterns"
+      ]
+    },
+    "frontend-architect": {
+      "name": "frontend-architect",
+      "category": "architecture",
+      "description": "Expert frontend architecture specialist for designing scalable, efficient web applications and orchestrating multi-agent frontend development workflows",
+      "capabilities": [
+        "frontend_architecture_design",
+        "technology_selection",
+        "multi_agent_orchestration",
+        "system_integration",
+        "performance_optimization",
+        "mcp_integration",
+        "code_generation",
+        "testing_architecture"
+      ],
+      "triggers": [
+        "frontend architecture design",
+        "technology stack selection",
+        "multi-agent frontend workflows",
+        "system integration",
+        "performance optimization",
+        "MCP client development",
+        "AG-UI protocol implementation"
+      ],
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "MultiEdit",
+        "Glob",
+        "Grep",
+        "Bash",
+        "WebFetch",
+        "WebSearch",
+        "Task",
+        "Context7 MCP",
+        "Sequential Thinking MCP",
+        "Magic Component Builder"
+      ],
+      "model": "sonnet",
+      "complexity_score": 9,
+      "success_rate": 0.92,
+      "avg_response_time": 35,
+      "dependencies": [],
+      "coordination_patterns": [
+        "hierarchical",
+        "parallel"
+      ],
+      "use_cases": [
+        "Designing scalable frontend architectures",
+        "Orchestrating multi-agent frontend development",
+        "Integrating MCP/AG-UI protocols",
+        "Technology stack evaluation and selection",
+        "Performance optimization and monitoring",
+        "Code generation from specifications"
+      ]
+    },
+    "vector-database-engineer": {
+      "name": "vector-database-engineer",
+      "category": "database",
+      "description": "Expert in vector databases, embedding strategies, and semantic search implementation. Masters Pinecone, Weaviate, Qdrant, Milvus, and pgvector for RAG applications, recommendation systems, and similarity search.",
+      "capabilities": [
+        "vector_database_implementation",
+        "embedding_optimization",
+        "semantic_search",
+        "rag_systems",
+        "similarity_search",
+        "index_configuration",
+        "hybrid_search"
+      ],
+      "triggers": [
+        "vector_database",
+        "embedding",
+        "semantic_search",
+        "rag",
+        "similarity_search",
+        "recommendation_engine"
+      ],
+      "tools": [
+        "Pinecone",
+        "Weaviate",
+        "Qdrant",
+        "Milvus",
+        "pgvector",
+        "vector databases"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.88,
+      "avg_response_time": 25,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "Building RAG (Retrieval Augmented Generation) systems",
+        "Implementing semantic search over documents",
+        "Creating recommendation engines",
+        "Building image/audio similarity search",
+        "Optimizing vector search latency and recall"
+      ]
+    },
+    "agent-architect": {
+      "name": "agent-architect",
+      "category": "meta",
+      "description": "Advanced Claude Code Agent Architect and optimization specialist for designing and reviewing high-quality sub-agents",
+      "capabilities": [
+        "agent_design",
+        "agent_optimization",
+        "prompt_engineering",
+        "subagent_creation",
+        "agent_review",
+        "architecture_patterns",
+        "genai_roi_optimization"
+      ],
+      "triggers": [
+        "agent",
+        "subagent",
+        "architect",
+        "design agent",
+        "review agent",
+        "optimize agent"
+      ],
+      "tools": [
+        "read",
+        "write",
+        "glob",
+        "grep",
+        "bash",
+        "task"
+      ],
+      "model": "sonnet",
+      "complexity_score": 9,
+      "success_rate": 0.92,
+      "avg_response_time": 30,
+      "dependencies": [],
+      "coordination_patterns": [
+        "hierarchical",
+        "sequential"
+      ],
+      "use_cases": [
+        "Designing new Claude Code subagents",
+        "Optimizing existing agent performance",
+        "Reviewing agent architecture and prompts",
+        "Creating agent orchestration patterns"
+      ]
+    },
+    "observability-engineer": {
+      "name": "observability-engineer",
+      "category": "observability",
+      "description": "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows.",
+      "capabilities": [
+        "monitoring_infrastructure",
+        "distributed_tracing",
+        "log_management",
+        "alerting_systems",
+        "sli_slo_management",
+        "opentelemetry",
+        "chaos_engineering",
+        "incident_response"
+      ],
+      "triggers": [
+        "monitoring",
+        "observability",
+        "tracing",
+        "logging",
+        "alerting",
+        "sli",
+        "slo",
+        "prometheus",
+        "grafana",
+        "opentelemetry"
+      ],
+      "tools": [
+        "Prometheus",
+        "Grafana",
+        "Jaeger",
+        "OpenTelemetry",
+        "ELK Stack",
+        "Loki",
+        "DataDog"
+      ],
+      "model": "sonnet",
+      "complexity_score": 8,
+      "success_rate": 0.9,
+      "avg_response_time": 28,
+      "dependencies": [],
+      "coordination_patterns": [
+        "sequential"
+      ],
+      "use_cases": [
+        "Designing comprehensive monitoring strategies",
+        "Implementing distributed tracing",
+        "Setting up SLI/SLO frameworks",
+        "Building incident response workflows",
+        "Creating observability pipelines"
+      ]
+    }
+  },
+  "categories": {
+    "orchestration": {
+      "agents": [
+        "context-manager",
+        "task-orchestrator",
+        "task-executor",
+        "task-checker",
+        "spec-kit-executor"
+      ],
+      "description": "Agent coordination and workflow management"
+    },
+    "frontend": {
+      "agents": [
+        "frontend-architect",
+        "nextjs-pro",
+        "vue-expert",
+        "react-pro",
+        "ui-designer",
+        "ux-design-expert",
+        "design-system-architect",
+        "tailwind-css-expert",
+        "frontend-developer"
+      ],
+      "description": "Frontend development and user interface"
+    },
+    "backend": {
+      "agents": [
+        "backend-architect",
+        "fastapi-expert",
+        "django-expert",
+        "api-documenter",
+        "api-schema-auto-migrator",
+        "jwt-expert",
+        "grpc-expert",
+        "openapi-expert",
+        "kafka-expert",
+        "bullmq-expert",
+        "openai-api-expert",
+        "serverless-architect"
+      ],
+      "description": "Backend development and API design"
+    },
+    "database": {
+      "agents": [
+        "database-admin",
+        "database-optimizer",
+        "postgres-pro",
+        "mysql-expert",
+        "mongodb-expert",
+        "redis-expert",
+        "elasticsearch-expert",
+        "vector-db-expert",
+        "prisma-expert",
+        "sql-pro"
+      ],
+      "description": "Database management and data engineering"
+    },
+    "security": {
+      "agents": [
+        "security-auditor",
+        "jwt_security_agent",
+        "provenance-auditor"
+      ],
+      "description": "Security assessment and implementation"
+    },
+    "healthcare": {
+      "agents": [
+        "healthcare-compliance-agent",
+        "heaig-medical-terminology-agent"
+      ],
+      "description": "Healthcare compliance and medical standards"
+    },
+    "ai_ml": {
+      "agents": [
+        "ai-engineer",
+        "ml-engineer",
+        "training-data-steward",
+        "langchain-expert",
+        "llm-architect"
+      ],
+      "description": "AI and machine learning implementation"
+    },
+    "devops": {
+      "agents": [
+        "devops-incident-responder",
+        "cicd-pipeline-engineer",
+        "docker-expert",
+        "kubernetes-architect",
+        "terraform-specialist",
+        "prometheus-expert",
+        "elk-expert",
+        "loki-expert"
+      ],
+      "description": "Infrastructure and deployment automation"
+    },
+    "testing": {
+      "agents": [
+        "test-automation-specialist",
+        "qa-expert",
+        "playwright-expert",
+        "jest-expert",
+        "qa-automation-engineer"
+      ],
+      "description": "Quality assurance and testing automation"
+    },
+    "business": {
+      "agents": [
+        "business-analyst",
+        "healthcare-compliance-agent",
+        "payment-integration-agent",
+        "compliance-officer-agent"
+      ],
+      "description": "Business analysis and compliance"
+    },
+    "documentation": {
+      "agents": [
+        "docs-architect",
+        "documentation-librarian",
+        "tutorial-engineer",
+        "create-readme-section"
+      ],
+      "description": "Technical documentation and knowledge management"
+    },
+    "utility": {
+      "agents": [
+        "code-searcher",
+        "code-reviewer",
+        "pr-reviewer-specialist",
+        "refactor-code",
+        "software-engineering-expert",
+        "performance-engineer",
+        "resilience-engineer",
+        "check-best-practices",
+        "user-behavior-analyst",
+        "memory-bank-synchronizer"
+      ],
+      "description": "General purpose and utility agents"
+    }
+  },
+  "capability_matrix": {
+    "frontend_development": [
+      "frontend-architect",
+      "nextjs-pro",
+      "vue-expert",
+      "react-pro",
+      "frontend-developer",
+      "ui-designer"
+    ],
+    "frontend_architecture": [
+      "frontend-architect",
+      "design-system-architect"
+    ],
+    "multi_agent_orchestration": [
+      "frontend-architect",
+      "context-manager",
+      "task-orchestrator"
+    ],
+    "backend_development": [
+      "backend-architect",
+      "microservices-architect",
+      "fastapi-expert",
+      "django-expert",
+      "api-documenter"
+    ],
+    "database_management": [
+      "database-admin",
+      "database-optimizer",
+      "postgres-pro",
+      "mysql-expert",
+      "mongodb-expert"
+    ],
+    "security_assessment": [
+      "security-auditor",
+      "jwt_security_agent",
+      "provenance-auditor"
+    ],
+    "healthcare_compliance": [
+      "healthcare-compliance-agent",
+      "heaig-medical-terminology-agent"
+    ],
+    "medical_terminology_validation": [
+      "heaig-medical-terminology-agent"
+    ],
+    "eat_compliance": [
+      "heaig-medical-terminology-agent"
+    ],
+    "performance_optimization": [
+      "performance-engineer",
+      "database-optimizer",
+      "nextjs-pro"
+    ],
+    "documentation_creation": [
+      "docs-architect",
+      "documentation-librarian",
+      "create-readme-section"
+    ],
+    "testing_automation": [
+      "test-automation-specialist",
+      "qa-expert",
+      "playwright-expert"
+    ],
+    "workflow_coordination": [
+      "task-orchestrator",
+      "context-manager",
+      "spec-kit-executor"
+    ],
+    "task_scheduling": [
+      "task-orchestrator",
+      "spec-kit-executor"
+    ],
+    "agent_coordination": [
+      "context-manager",
+      "spec-kit-executor"
+    ],
+    "dependency_resolution": [
+      "task-orchestrator",
+      "spec-kit-executor"
+    ],
+    "ai_ml_implementation": [
+      "ai-engineer",
+      "ml-engineer",
+      "nlp-engineer",
+      "langchain-expert",
+      "langgraph-agent",
+      "llm-architect"
+    ],
+    "cloud_infrastructure": [
+      "kubernetes-architect",
+      "terraform-specialist",
+      "serverless-architect"
+    ],
+    "code_review": [
+      "code-reviewer",
+      "pr-reviewer-specialist",
+      "security-auditor"
+    ],
+    "incident_response": [
+      "devops-incident-responder",
+      "security-auditor"
+    ]
+  }
+}

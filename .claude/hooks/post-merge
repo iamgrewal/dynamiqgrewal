@@ -1,0 +1,17 @@
+#!/bin/bash
+# Post-merge hook to sync orchestration state
+
+if [ -d ".specify" ]; then
+    echo "Syncing spec-kit state after merge..."
+
+    # Update task registry
+    python3 .claude/tools/sync-tasks.py
+
+    # Validate orchestration state
+    spec-kit validate --quiet
+
+    # Alert if orchestration was in progress
+    if [ -f ".specify/checkpoints/current.json" ]; then
+        echo "⚠️  Active orchestration detected. Run 'spec-kit status' to check."
+    fi
+fi

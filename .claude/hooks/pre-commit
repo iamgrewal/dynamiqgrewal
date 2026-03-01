@@ -1,0 +1,26 @@
+#!/bin/bash
+# Pre-commit hook for spec-kit validation
+
+# Check if spec-kit project
+if [ -d ".specify" ]; then
+    echo "Running spec-kit validation..."
+
+    # Validate task files
+    for task_file in .specify/tasks/*.task; do
+        if [ -f "$task_file" ]; then
+            python3 .claude/tools/task-validator.py "$task_file"
+            if [ $? -ne 0 ]; then
+                echo "Task validation failed: $task_file"
+                exit 1
+            fi
+        fi
+    done
+
+    # Validate dependencies
+    if [ -f ".specify/dependencies.json" ]; then
+        python3 .claude/tools/dependency-validator.py \
+            .specify/dependencies.json
+    fi
+fi
+
+exit 0

@@ -1,0 +1,3 @@
+[submodule "dynamiq"]
+	path = dynamiq
+	url = https://github.com/dynamiq-ai/dynamiq.git

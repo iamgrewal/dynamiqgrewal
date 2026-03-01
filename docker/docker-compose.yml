@@ -1,0 +1,78 @@
+services:
+  # --- Main Application ---
+  dynamiq-app:
+    image: dynamiq-app:${IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: develop
+    volumes:
+      - ../docker/main.py:/app/main.py
+      - ../dynamiq:/app/dynamiq
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file:
+      - ../.env
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434/v1
+      - OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-gpt-oss:120b-cloud}
+      - MILVUS_URI=http://localhost:19530
+
+  # --- Standard Tests ---
+  dynamiq-app-test:
+    image: dynamiq-app:${IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: develop
+    entrypoint: ["make", "test"]
+    env_file:
+      - ../.env
+    volumes:
+      - ../:/app
+      - ../dynamiq:/app/dynamiq
+
+  # --- Coverage Tests ---
+  dynamiq-app-test-cov:
+    image: dynamiq-app:${IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: develop
+    entrypoint: ["make", "test-cov"]
+    env_file:
+      - ../.env
+    volumes:
+      - ../:/app
+      - ../dynamiq:/app/dynamiq
+      - ../reports:/app/reports:wr
+
+  # --- Coverage (Excluding integration with creds) ---
+  dynamiq-app-test-cov-exclude-integration-with-creds:
+    image: dynamiq-app:${IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: develop
+    entrypoint: ["make", "test-cov-exclude-integration-with-creds"]
+    env_file:
+      - ../.env
+    volumes:
+      - ../:/app
+      - ../dynamiq:/app/dynamiq
+      - ../reports:/app/reports:wr
+
+  # --- Integration Tests with Credentials ---
+  dynamiq-app-test-integration-with-creds:
+    image: dynamiq-app:${IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: develop
+    entrypoint: ["make", "test-integration-with-creds"]
+    env_file:
+      - ../.env
+    volumes:
+      - ../:/app
+      - ../dynamiq:/app/dynamiq

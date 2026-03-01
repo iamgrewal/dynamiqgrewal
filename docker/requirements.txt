@@ -1,0 +1,6 @@
+dynamiq
+pydantic
+requests
+cryptography>=44.0.0
+# Optional: add any specific vector stores if you plan to use RAG
+# pinecone-client
