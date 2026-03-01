@@ -1,3 +1,7 @@
+# Claude Code settings and instructions
+.claude/
+CLAUDE.md
+
 # Environment files (contains secrets - NEVER commit)
 .env
 .env.local
